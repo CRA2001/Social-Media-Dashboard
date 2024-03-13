@@ -2,10 +2,17 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color: rgb(247,246,252);
-    color:rgb(70,71,81);
-    font-family: "Open Sans", sans-serif ;
+    background-color: #121212;
+    color:whitesmoke;
+    font-family: "Montserrat", sans-serif ;
+    animation: fadeIn ease 0.5s ;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .material-icons-outlined {
     vertical-align: middle;
     line-height: 1px;
@@ -13,28 +20,21 @@ body{
   }
   
   .text-secondary {
-    color: rgb(70, 71, 81);
+    color: white
   }
   
-  .text-blue {
-    color: rgb(29, 38, 154);
-  }
   
   .background-blue {
     background-color: rgb(29, 38, 154);
   }
   
-  .text-red {
-    color: rgb(213, 0, 0);
-  }
+
   
   .background-red {
     background-color: rgb(213, 0, 0);
   }
   
-  .text-green {
-    color: rgb(46, 125, 50);
-  }
+
   
   .background-green {
     background-color: rgb(46, 125, 50);
@@ -45,9 +45,6 @@ body{
   }
 
 
-  .text-orange {
-    color: rgb(255, 111, 0);
-  }
 
 /* ------------------ GRID CONTAINER ------------------- */
 .grid-container{
@@ -67,8 +64,15 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 30px 0 30px;
+    background-color: #353535;
     box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
+    animation:fadeIn ease 3s;
+    animation-iteration-count: 1;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .menu-icon{
     display:none;
@@ -78,11 +82,16 @@ body{
 #sidebar{
     grid-area: sidebar;
     height: 100%;
-    background-color: rgba(29,38,154);
+    background-color: #353535;
     color:rgb(255,255,255);
     transition:all 0.5s;
     -webkit-transition:all 0.5s;
+    animation:fadeIn ease 4s;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .sidebar-title {
     display: flex;
@@ -141,7 +150,12 @@ body{
     grid-area: main;
     overflow-y:auto;
     padding:20px 20px;
+    animation:fadeIn ease 5s;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .main-title{
     display:flex;
@@ -162,7 +176,6 @@ body{
     border-radius:30px;
     box-shadow: 0 6px 7px -4px rgba(0,0,0,0.2);
 }
-
 .card:first-child{
     background-color:rgb(213,0,0);
 }
@@ -197,13 +210,16 @@ body{
   }
   
   .product-card {
+    color:#7F7BFF;
     height: 350px;
-    background-color: rgb(255, 255, 255);
+    background-color: #3E3E3E;
     padding: 25px;
     border-radius: 30px;
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
   }
-  
+  .text-secondary-updates{
+    color:#7F7BFF;
+  }
   .product-description {
     padding-top: 50px;
   }
